@@ -1,223 +1,45 @@
 const questions = [
 
-{
-question: "Who founded the Maurya Empire?",
-options: [
-"A. Chandragupta Maurya",
-"B. Ashoka",
-"C. Bindusara",
-"D. Bimbisara"
-],
-answer: 0
-},
+{question:"Who founded the Maurya Empire?",options:["A. Chandragupta Maurya","B. Ashoka","C. Bindusara","D. Bimbisara"],answer:0},
+{question:"Who wrote Arthashastra?",options:["A. Kalidasa","B. Chanakya","C. Panini","D. Banabhatta"],answer:1},
+{question:"Megasthenes visited India during whose reign?",options:["A. Ashoka","B. Chandragupta Maurya","C. Bindusara","D. Harsha"],answer:1},
+{question:"Ashoka embraced Buddhism after which battle?",options:["A. Battle of Buxar","B. Battle of Kalinga","C. Battle of Panipat","D. Battle of Plassey"],answer:1},
+{question:"Capital of Magadha during Bimbisara?",options:["A. Vaishali","B. Rajgir","C. Pataliputra","D. Nalanda"],answer:1},
+{question:"Founder of Gupta dynasty?",options:["A. Chandragupta I","B. Samudragupta","C. Sri Gupta","D. Kumaragupta"],answer:2},
+{question:"Golden Age of India refers to which period?",options:["A. Maurya","B. Gupta","C. Mughal","D. Delhi Sultanate"],answer:1},
+{question:"Allahabad pillar inscription was written by?",options:["A. Kalidasa","B. Banabhatta","C. Harisena","D. Panini"],answer:2},
+{question:"Nalanda University was founded by?",options:["A. Harsha","B. Kumaragupta","C. Ashoka","D. Dharmapala"],answer:1},
+{question:"Who built Vikramshila University?",options:["A. Ashoka","B. Harsha","C. Dharmapala","D. Chandragupta"],answer:2},
 
-{
-question: "The capital of Magadha during Bimbisara's rule was:",
-options:[
-"A. Vaishali",
-"B. Rajgir",
-"C. Pataliputra",
-"D. Nalanda"
-],
-answer:1
-},
+{question:"Battle of Buxar fought in which year?",options:["A. 1757","B. 1764","C. 1761","D. 1773"],answer:1},
+{question:"Who defeated Ibrahim Lodi?",options:["A. Akbar","B. Babur","C. Sher Shah","D. Humayun"],answer:1},
+{question:"Sher Shah Suri was born at?",options:["A. Patna","B. Sasaram","C. Ara","D. Gaya"],answer:1},
+{question:"Grand Trunk Road built by?",options:["A. Akbar","B. Sher Shah","C. Babur","D. Jahangir"],answer:1},
+{question:"Who was the last Mauryan ruler?",options:["A. Ashoka","B. Brihadratha","C. Dasharatha","D. Samprati"],answer:1},
+{question:"Capital of Gupta Empire?",options:["A. Ujjain","B. Pataliputra","C. Mathura","D. Kannauj"],answer:1},
+{question:"Who composed Rajatarangini?",options:["A. Kalhana","B. Banabhatta","C. Panini","D. Kalidasa"],answer:0},
+{question:"First Buddhist council held at?",options:["A. Rajgir","B. Vaishali","C. Pataliputra","D. Nalanda"],answer:0},
+{question:"Second Buddhist council held at?",options:["A. Rajgir","B. Vaishali","C. Pataliputra","D. Taxila"],answer:1},
+{question:"Fourth Buddhist council held during?",options:["A. Ashoka","B. Kanishka","C. Harsha","D. Samudragupta"],answer:1},
 
-{
-question:"Nalanda University was established during the reign of:",
-options:[
-"A. Harsha",
-"B. Chandragupta II",
-"C. Kumaragupta",
-"D. Skandagupta"
-],
-answer:2
-},
+{question:"Who founded Buddhism?",options:["A. Mahavira","B. Gautama Buddha","C. Ashoka","D. Nagarjuna"],answer:1},
+{question:"Buddha attained enlightenment at?",options:["A. Sarnath","B. Bodh Gaya","C. Kushinagar","D. Lumbini"],answer:1},
+{question:"Mahavira was the?",options:["A. 22nd Tirthankara","B. 23rd Tirthankara","C. 24th Tirthankara","D. 21st Tirthankara"],answer:2},
+{question:"Where was Buddha born?",options:["A. Kapilvastu","B. Lumbini","C. Vaishali","D. Rajgir"],answer:1},
+{question:"Where did Buddha give first sermon?",options:["A. Sarnath","B. Bodhgaya","C. Rajgir","D. Nalanda"],answer:0},
+{question:"Where did Buddha attain Mahaparinirvana?",options:["A. Sarnath","B. Kushinagar","C. Rajgir","D. Nalanda"],answer:1},
+{question:"Who wrote Buddhacharita?",options:["A. Ashvaghosha","B. Kalidasa","C. Banabhatta","D. Panini"],answer:0},
+{question:"Capital of Magadha shifted to Pataliputra by?",options:["A. Ajatashatru","B. Udayin","C. Bimbisara","D. Ashoka"],answer:1},
+{question:"Ajatashatru belonged to which dynasty?",options:["A. Haryanka","B. Nanda","C. Maurya","D. Gupta"],answer:0},
+{question:"Founder of Nanda dynasty?",options:["A. Mahapadma Nanda","B. Dhana Nanda","C. Ugrasena","D. Bimbisara"],answer:0},
 
-{
-question:"The Battle of Buxar was fought in:",
-options:[
-"A. 1757",
-"B. 1764",
-"C. 1775",
-"D. 1782"
-],
-answer:1
-},
-
-{
-question:"Who was the founder of the Gupta Dynasty?",
-options:[
-"A. Chandragupta I",
-"B. Samudragupta",
-"C. Sri Gupta",
-"D. Kumaragupta"
-],
-answer:2
-},
-
-{
-question:"Ashoka embraced Buddhism after which battle?",
-options:[
-"A. Battle of Panipat",
-"B. Battle of Kalinga",
-"C. Battle of Hydaspes",
-"D. Battle of Buxar"
-],
-answer:1
-},
-
-{
-question:"Who wrote 'Arthashastra'?",
-options:[
-"A. Chanakya",
-"B. Kalidasa",
-"C. Megasthenes",
-"D. Panini"
-],
-answer:0
-},
-
-{
-question:"The ancient name of Patna was:",
-options:[
-"A. Kusumpura",
-"B. Pataliputra",
-"C. Both A and B",
-"D. Rajgriha"
-],
-answer:2
-},
-
-{
-question:"Who was the Greek ambassador in Chandragupta Maurya's court?",
-options:[
-"A. Seleucus",
-"B. Megasthenes",
-"C. Herodotus",
-"D. Pliny"
-],
-answer:1
-},
-
-{
-question:"The Vikramshila University was founded by:",
-options:[
-"A. Dharmapala",
-"B. Ashoka",
-"C. Harsha",
-"D. Chandragupta II"
-],
-answer:0
-},
-
-{
-question:"Sher Shah Suri was born in:",
-options:[
-"A. Sasaram",
-"B. Patna",
-"C. Ara",
-"D. Gaya"
-],
-answer:0
-},
-
-{
-question:"The Grand Trunk Road was built by:",
-options:[
-"A. Akbar",
-"B. Sher Shah Suri",
-"C. Babur",
-"D. Humayun"
-],
-answer:1
-},
-
-{
-question:"The Gupta period is known as:",
-options:[
-"A. Golden Age of India",
-"B. Dark Age",
-"C. Age of Trade",
-"D. Iron Age"
-],
-answer:0
-},
-
-{
-question:"Who composed the Allahabad Pillar Inscription?",
-options:[
-"A. Kalidasa",
-"B. Harisena",
-"C. Banabhatta",
-"D. Panini"
-],
-answer:1
-},
-
-{
-question:"The capital of the Gupta Empire was:",
-options:[
-"A. Ujjain",
-"B. Pataliputra",
-"C. Mathura",
-"D. Kannauj"
-],
-answer:1
-},
-
-{
-question:"The Buddhist council at Vaishali was:",
-options:[
-"A. First",
-"B. Second",
-"C. Third",
-"D. Fourth"
-],
-answer:1
-},
-
-{
-question:"Who defeated Ibrahim Lodi in 1526?",
-options:[
-"A. Babur",
-"B. Akbar",
-"C. Sher Shah",
-"D. Humayun"
-],
-answer:0
-},
-
-{
-question:"The famous Nalanda University is located in which state?",
-options:[
-"A. Uttar Pradesh",
-"B. Bihar",
-"C. Madhya Pradesh",
-"D. West Bengal"
-],
-answer:1
-},
-
-{
-question:"Who wrote 'Rajatarangini'?",
-options:[
-"A. Kalhana",
-"B. Banabhatta",
-"C. Harisena",
-"D. Panini"
-],
-answer:0
-},
-
-{
-question:"Who was the last Mauryan ruler?",
-options:[
-"A. Ashoka",
-"B. Brihadratha",
-"C. Dasharatha",
-"D. Samprati"
-],
-answer:1
-}
-
-];
+{question:"Who invaded India in 326 BCE?",options:["A. Seleucus","B. Alexander","C. Darius","D. Cyrus"],answer:1},
+{question:"Greek ambassador to Chandragupta Maurya?",options:["A. Seleucus","B. Megasthenes","C. Strabo","D. Pliny"],answer:1},
+{question:"Who wrote Indica?",options:["A. Megasthenes","B. Strabo","C. Herodotus","D. Pliny"],answer:0},
+{question:"Who was called Napoleon of India?",options:["A. Samudragupta","B. Chandragupta II","C. Harsha","D. Ashoka"],answer:0},
+{question:"Iron pillar is located at?",options:["A. Delhi","B. Patna","C. Ujjain","D. Mathura"],answer:0},
+{question:"Who built Sanchi Stupa?",options:["A. Ashoka","B. Harsha","C. Chandragupta","D. Kanishka"],answer:0},
+{question:"Who founded Pataliputra?",options:["A. Ajatashatru","B. Udayin","C. Ashoka","D. Bimbisara"],answer:1},
+{question:"Which dynasty ruled before Mauryas?",options:["A. Nanda","B. Gupta","C. Haryanka","D. Shunga"],answer:0},
+{question:"Who wrote Harshacharita?",options:["A. Banabhatta","B. Kalidasa","C. Panini","D. Patanjali"],answer:0},
+{question:"Harsha belonged to which dynasty?",options:["A. Pushyabhuti","B. Gupta","C. Maurya","D. Nanda"],answer:0},
