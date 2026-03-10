@@ -5,16 +5,17 @@ function loadQuestion(){
 
 let q = questions[currentQuestion];
 
-document.getElementById("question").innerText =
-(currentQuestion+1) + ". " + q.question;
+document.getElementById("progress").innerText =
+"Question " + (currentQuestion+1) + " / " + questions.length;
+
+document.getElementById("question").innerText = q.question;
 
 let optionsHTML = "";
 
 q.options.forEach((opt,index)=>{
 
 optionsHTML += `
-<button class="option"
-onclick="checkAnswer(${index})">
+<button class="option" onclick="selectAnswer(${index}, this)">
 ${opt}
 </button>
 `;
@@ -25,11 +26,27 @@ document.getElementById("options").innerHTML = optionsHTML;
 
 }
 
-function checkAnswer(selected){
+function selectAnswer(selected, element){
 
-if(selected === questions[currentQuestion].answer){
+let correct = questions[currentQuestion].answer;
+
+let buttons = document.querySelectorAll(".option");
+
+buttons.forEach(btn => btn.disabled = true);
+
+if(selected === correct){
+
+element.classList.add("correct");
 score++;
+
+}else{
+
+element.classList.add("wrong");
+buttons[correct].classList.add("correct");
+
 }
+
+setTimeout(nextQuestion,1200);
 
 }
 
@@ -38,12 +55,14 @@ function nextQuestion(){
 currentQuestion++;
 
 if(currentQuestion < questions.length){
+
 loadQuestion();
+
 }else{
-document.getElementById("question").innerHTML = "Quiz Finished";
-document.getElementById("options").innerHTML = "";
-document.getElementById("score").innerHTML =
-"Your Score: " + score + " / " + questions.length;
+
+document.querySelector(".quiz-container").innerHTML =
+"<div id='result'>Quiz Finished<br><br>Your Score: "+score+" / "+questions.length+"</div>";
+
 }
 
 }
